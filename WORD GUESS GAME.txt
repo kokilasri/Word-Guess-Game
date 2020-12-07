@@ -1,0 +1,67 @@
+import pandas as pd
+import random
+
+df = pd.read_csv('words.txt')
+
+name = input('Enter your name: ')
+print('*** WELCOME TO WORD FINDER GAME ***')
+
+print("\n\n INSTRUCTIONS \n  ")
+print("hi {0}, Let's start the Game ".format(name))
+print('You have 5 chances to find the word')
+print('you have 5 turns to guess the word ')
+
+turns = 10
+actword  = random.choice(df.Words)
+l = len(actword)
+guessed_word = []
+wrong_word = []
+
+
+
+print('\n\n GAME STARTED - GOOD LUCK {0} '.format(name))
+print('your have to find the word of length {0} '.format(l))
+for i in range(l):
+    guessed_word.append('_ ')
+print(guessed_word)
+print('\n')
+guess = ""
+
+while turns>0:
+    guessed_letter = input('Enter your Guess: ')
+    print('\n')
+
+    if not guessed_letter.isalpha():
+        print('Guess only a letter\n')
+        continue
+    elif len(guessed_letter) > 1:
+        print('Guess only one letter\n')
+        continue
+    elif (guessed_letter in wrong_word):
+        print("You have already guessed the letter\n")
+        continue
+
+    if guessed_letter in actword:
+        print('you have guessed the correct letter')
+        for i in range(l):
+            if (actword[i] == guessed_letter):
+                guessed_word[i] = actword[i]
+        print("\n", guessed_word)
+    
+    else:
+        print('you have guessed the wrong letter')
+        turns = turns - 1
+        print("you have only {0} turns left ".format(turns))
+        print('\n')
+        wrong_word.append(guessed_letter)
+
+    guess = "".join(guessed_word)
+    if (guess == actword):
+        print("YAYYYYY !! YOU HAVE WON THE GAME")
+        print(" The correct answer is {0} ". format(actword))
+        break
+
+if (turns == 0):
+    print(" The correct answer is {0} ". format(actword))
+    print("\n SORRY, YOU HAVE LOST THE GAME")
+    
