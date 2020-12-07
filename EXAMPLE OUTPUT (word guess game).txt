@@ -1,0 +1,103 @@
+Enter your name: Radha
+*** WELCOME TO WORD FINDER GAME ***
+
+
+ INSTRUCTIONS 
+  
+hi Radha, Let's start the Game 
+You have 5 chances to find the word
+you have 5 turns to guess the word 
+
+
+ GAME STARTED - GOOD LUCK Radha 
+your have to find the word of length 7 
+['_ ', '_ ', '_ ', '_ ', '_ ', '_ ', '_ ']
+
+
+Enter your Guess: a
+
+
+you have guessed the correct letter
+
+ ['_ ', 'a', '_ ', '_ ', '_ ', 'a', '_ ']
+Enter your Guess: k
+
+
+you have guessed the wrong letter
+you have only 9 turns left 
+
+
+Enter your Guess: e
+
+
+you have guessed the wrong letter
+you have only 8 turns left 
+
+
+Enter your Guess: i
+
+
+you have guessed the wrong letter
+you have only 7 turns left 
+
+
+Enter your Guess: h
+
+
+you have guessed the wrong letter
+you have only 6 turns left 
+
+
+Enter your Guess: m
+
+
+you have guessed the wrong letter
+you have only 5 turns left 
+
+
+Enter your Guess: t
+
+
+you have guessed the correct letter
+
+ ['_ ', 'a', 't', '_ ', '_ ', 'a', '_ ']
+Enter your Guess: e
+
+
+You have already guessed the letter
+
+Enter your Guess: 8
+
+
+Guess only a letter
+
+Enter your Guess: ty
+
+
+Guess only one letter
+
+Enter your Guess: n
+
+
+you have guessed the correct letter
+
+ ['n', 'a', 't', '_ ', '_ ', 'a', '_ ']
+Enter your Guess: l
+
+
+you have guessed the correct letter
+
+ ['n', 'a', 't', '_ ', '_ ', 'a', 'l']
+Enter your Guess: u
+
+
+you have guessed the correct letter
+
+ ['n', 'a', 't', 'u', '_ ', 'a', 'l']
+Enter your Guess: r
+
+
+you have guessed the correct letter
+
+ ['n', 'a', 't', 'u', 'r', 'a', 'l']
+YAYYYYY !! YOU HAVE WON THE GAMEs
